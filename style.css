@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -9,14 +10,14 @@ body {
 }
 
 .container {
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 
     .navbar {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
 
         .nav {
             display: flex;
@@ -57,5 +58,135 @@ body {
                 }
             }
         }
+    }
+
+
+    /* main */
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        margin: 30px 200px 100px 200px;
+
+
+        /* left main */
+        .left-main {
+            background-color: white;
+            padding: 30px;
+
+            .form-div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .first-sect {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    h1 {
+                        font-weight: 400;
+                        color: gray;
+                    }
+                    hr {
+                        opacity: 0.1;
+                    }
+                }
+
+                .second-sect {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    .second-sect1 {
+                        display: flex;
+                        flex-direction: row;
+                        /* justify-items: center; */
+                        align-items: center;
+                        gap: 15px;
+                        padding-top: 20px;
+
+                        p {
+                            /* border: 2px solid rgba(31, 96, 182, 0.596);
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50px; */
+
+                            img {
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .second-sect2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .firstlastname {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 50px;
+
+                        .firstname {
+
+
+                            label {
+                                font-size: small;
+                            }
+                            input {
+                                background-color: rgb(226, 216, 216);
+                                opacity: 0.5;
+                                padding: 2px;
+                                border: 0;
+                            }
+                        }
+
+                        .lastname {
+
+
+                            label {
+                                font-size: small;
+                            }
+                            input {
+                                background-color: rgb(226, 216, 216);
+                                opacity: 0.5;
+                                padding: 2px;
+                                border: 0;
+                            }
+                        }
+                    }
+
+                    .email {
+                        padding-bottom: 20px;
+
+                        label {
+                            font-size: small;
+                        }
+                        input {
+                            background-color: rgb(226, 216, 216);
+                            opacity: 0.5;
+                            padding: 2px;
+                            border: 0;
+                            width: 300px;
+                        }
+                    }
+
+                    .second-sect-hori {
+
+
+                        hr {
+                            opacity: 0.1;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* right main */
+        .right-main {
+            background-color: rgba(31, 96, 182, 0.596);
+        }
+
     }
 }
