@@ -100,31 +100,36 @@
 
               <div class="third-sect3">
                 <div class="third-sect3-first-div">
-                  <p>2</p>
+                  <p>
+                    <img src="assests/image/number-5433251_1280.png" alt="number 1">
+                  </p>
                   <h4>Your payment information</h4>
                 </div>
                 <div class="third-sect3-second-div">
                   <label for="card-number">Credit Card</label>
                   <input
-                    type="number"
+                    type="text"
                     name="card-number"
                     id="card-number"
+                    maxlength="19"
+                    oninput="this.value = this.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1 ')"
+                    pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}"
                     placeholder="Card Number"
                     required
                   />
                 </div>
-                <div>
+                <div class="third-sect3-second-div-hori">
                   <hr />
                 </div>
               </div>
 
               <div class="fourth-sect4">
                 <button type="submit">Buy WP Pusher</button>
-                <p>
-                  ? <span>Need any help?</span> Don't hesitate to contact
+                <p class="fourth-sect4-first-p">
+                  ? <span><b>Need any help?</b></span> Don't hesitate to contact
                   support
                 </p>
-                <p>Powered by <b>Stripe</b></p>
+                <p class="fourth-sect4-second-p"> Powered by <b>Stripe</b></p>
               </div>
             </div>
           </div>
@@ -134,7 +139,7 @@
         <div class="right-main">
           <div class="right-main-first-div">
             <h3>Freelancer</h3>
-            <p>$99 <span>/year</span></p>
+            <p><sup>$</sup> <span class="right-main-first-div-span">99</span> <span>/year</span></p>
             <p><i>Automatically renews after 1 year</i></p>
           </div>
           <div class="right-main-scond-div">
@@ -143,9 +148,9 @@
             <p><span>@</span> Email support</p>
           </div>
           <div class="right-main-third-div">
-            <p>Need 20 client sites?</p>
+            <p>Need <b>20</b> client sites?</p>
             <p>
-              <b>Switch to the <i>Agency</i> plan.</b>
+              <b class="right-main-third-div-second-p">Switch to the <i>Agency</i> plan.</b>
             </p>
             <hr />
           </div>
@@ -160,7 +165,7 @@
               </p>
             </div>
             <div class="right-main-fourth-div2">
-              <img src="" alt="" />
+              <img src="assests/image/20230619_083913.jpg" alt="picture" />
               <p>Kirk Beard</p>
             </div>
           </div>
@@ -168,7 +173,7 @@
       </div>
 
       <div class="footer">
-        <p>@copy 2025 WP Pusher IVS. <span>Terms of Service</span></p>
+        <p>&copy; 2025 WP Pusher IVS. <span>Terms of Service</span></p>
       </div>
     </div>
   </body>
